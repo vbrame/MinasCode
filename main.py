@@ -2,18 +2,19 @@ from LinkedStack import LinkedStack
 
 x = LinkedStack()
 
-x.push(10)
-x.push(25)
-x.push(55)
+x.push(11)
+x.push(5)
+x.push(1)
+
+x.view()
 
 
-for i in range(x.size - 1, -1, -1):
+y = LinkedStack()
 
-    print '|', x.data[i].get_element(), '|' ,
-    #next object
+y.push(15)
+y.push(10)
+y.push(6)
 
-    if x.data[i].get_next() == None:
-        print '--> None'
-    else:
-        print  x.data[i].get_next().get_element(), '-|---->  ',
+y.view()
+
 

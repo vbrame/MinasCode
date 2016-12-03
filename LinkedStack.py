@@ -47,3 +47,10 @@ class LinkedStack:
         self.size -= 1
         return answer
 
+    def view(self):
+        for i in range(self.size - 1, -1, -1):
+            print '|', self.data[i].get_element(), '|',
+            if self.data[i].get_next() is None:
+                print '--> None'
+            else:
+                print self.data[i].get_next().get_element(), '-|---->  ',
