@@ -54,3 +54,4 @@ class LinkedStack:
                 print '--> None'
             else:
                 print self.data[i].get_next().get_element(), '-|---->  ',
+
